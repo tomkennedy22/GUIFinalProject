@@ -9,7 +9,7 @@
     <string name="welcomeGo">Play!</string>
     <string name="title_activity_show_board">ShowBoard</string>
     <string name="guessLetter">Guess a letter!</string>
-    
+
     <array name="words">
         <item>ADDRESS BOOK</item>
         <item>BABY POWDER</item>
@@ -34,5 +34,7 @@
         <item>AUTO RACING</item>
         <item>CHEESE PIZZA</item>
     </array>
+
+    <string name="title_activity_pick_letter">PickLetter</string>
 
 </resources>

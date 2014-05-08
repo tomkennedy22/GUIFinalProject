@@ -1013,8 +1013,8 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
-        public static final int gridView=0x7f050042;
-        public static final int guessButton=0x7f050041;
+        public static final int gridView=0x7f05003f;
+        public static final int guessButton=0x7f050042;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
@@ -1043,8 +1043,8 @@ containing a value of this type.
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
-        public static final int showWord=0x7f050040;
-        public static final int showboard=0x7f05003f;
+        public static final int showWord=0x7f050041;
+        public static final int showboard=0x7f050040;
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
@@ -1106,14 +1106,17 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int activity_main=0x7f030017;
-        public static final int activity_show_board=0x7f030018;
-        public static final int avaliable_letter=0x7f030019;
-        public static final int fragment_show_board=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int activity_pick_letter=0x7f030018;
+        public static final int activity_show_board=0x7f030019;
+        public static final int avaliable_letter=0x7f03001a;
+        public static final int fragment_pick_letter=0x7f03001b;
+        public static final int fragment_show_board=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
-        public static final int show_board=0x7f0d0001;
+        public static final int pick_letter=0x7f0d0001;
+        public static final int show_board=0x7f0d0002;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1161,6 +1164,7 @@ containing a value of this type.
         public static final int choose_letter=0x7f0a0010;
         public static final int guessLetter=0x7f0a0014;
         public static final int hello_world=0x7f0a000e;
+        public static final int title_activity_pick_letter=0x7f0a0015;
         public static final int title_activity_show_board=0x7f0a0013;
         public static final int welcome=0x7f0a0011;
         public static final int welcomeGo=0x7f0a0012;

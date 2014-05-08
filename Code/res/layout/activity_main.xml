@@ -16,13 +16,14 @@
             android:layout_centerHorizontal="true"
             android:textSize="22sp" />
 
-        <Button
+        <TextView
             android:id="@+id/welcomeGo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:enabled="false"
+            android:layout_alignParentBottom="true"
+            android:background="#AAAAAA"
+            android:gravity="center"
             android:text="@string/welcomeGo"
-            android:layout_alignParentBottom="true" />
+            android:textSize="22sp" />
 
     </RelativeLayout>

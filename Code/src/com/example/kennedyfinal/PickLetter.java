@@ -1,11 +1,8 @@
 package com.example.kennedyfinal;
 
-import com.example.kennedyfinal.ShowBoard.PlaceholderFragment;
-
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,47 +13,52 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.os.Build;
 
-public class MainActivity extends ActionBarActivity {
-
-	
+public class PickLetter extends ActionBarActivity {
+	String[] letters;
 	GridView grid;
-	private TextView b;
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        
-        Log.v("TK", "oncreate");
-		setContentView(R.layout.activity_main);
-		b = (TextView) findViewById(R.id.welcomeGo);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		Log.v("TK", "pickcreate");
+		Bundle b=this.getIntent().getExtras();
+		letters=b.getStringArray("key");
+		
+		for(String a:letters){
+			Log.v("lettersTK", a);
+		}
+		
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_pick_letter);
+
+		grid = (GridView) findViewById(R.id.gridView);
 		 
-		b.setOnClickListener(new OnClickListener() {
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, letters);
+ 
+		grid.setAdapter(adapter);
+ 
+		grid.setOnClickListener(new OnClickListener() {
+			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+			   Toast.makeText(getApplicationContext(),
+				((TextView) v).getText(), Toast.LENGTH_SHORT).show();
+			}
+
 			@Override
-			public void onClick(View v) {
-				Log.v("TK", "onclick");
-				startRun();
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
 			}
 		});
-
-    }
-    
-    private void startRun(){
-    	Intent intent = new Intent(this, ShowBoard.class);
-    	MainActivity.this.startActivity(intent);
-    }
-
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		//getMenuInflater().inflate(R.menu.activity_main, menu);
+		getMenuInflater().inflate(R.menu.pick_letter, menu);
 		return true;
 	}
 
@@ -83,11 +85,10 @@ public class MainActivity extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.activity_main,
+			View rootView = inflater.inflate(R.layout.fragment_pick_letter,
 					container, false);
 			return rootView;
 		}
 	}
-    
 
 }
