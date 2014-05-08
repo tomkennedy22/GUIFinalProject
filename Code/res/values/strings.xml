@@ -9,5 +9,30 @@
     <string name="welcomeGo">Play!</string>
     <string name="title_activity_show_board">ShowBoard</string>
     <string name="guessLetter">Guess a letter!</string>
+    
+    <array name="words">
+        <item>ADDRESS BOOK</item>
+        <item>BABY POWDER</item>
+        <item>BIRD FEEDER</item>
+        <item>BUBBLE BATH</item>
+        <item>COZY SOFA</item>
+        <item>DESK CHAIR</item>
+        <item>DOOR HINGE</item>
+        <item>FLOOR WAX</item>
+        <item>LAVA LAMP</item>
+        <item>OAK CHINA CABINET</item>
+        <item>PENS AND PENCILS</item>
+        <item>PHOTO ALBUM</item>
+        <item>PINK FUZZY SLIPPERS</item>
+        <item>POSTAGE STAMPS</item>
+        <item>PUNCH BOWL</item>
+        <item>SAFETY PINS</item>
+        <item>WOODEN TABLE</item>
+        <item>AFRICAN SAFARI</item>
+        <item>MIAMI VICE</item>
+        <item>AFTERNOON NAP</item>
+        <item>AUTO RACING</item>
+        <item>CHEESE PIZZA</item>
+    </array>
 
 </resources>

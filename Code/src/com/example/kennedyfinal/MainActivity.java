@@ -23,18 +23,6 @@ public class MainActivity extends ActionBarActivity {
 
 	
 	GridView grid;
-	
-	static final String[] word = new String[] {};
-	
-	static final String[] board = new String[] {};
-	 
-	static final String[] letters = new String[] { 
-			"A", "B", "C", "D", "E",
-			"F", "G", "H", "I", "J",
-			"K", "L", "M", "N", "O",
-			"P", "Q", "R", "S", "T",
-			"U", "V", "W", "X", "Y", "Z"};
-	
 	private Button b;
 	
     @Override
@@ -44,11 +32,6 @@ public class MainActivity extends ActionBarActivity {
 		setContentView(R.layout.activity_main);
 		b = (Button) findViewById(R.id.welcomeGo);
 		 
-		Go();
-    }
-    
-    private void Go() {
-
 		b.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
